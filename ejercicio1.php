@@ -36,5 +36,10 @@
 
     $notaTotal = ($nota1 + $nota2 + $nota3) / 3;
 
-    echo "<br> El estudiante {$name} obtuvo como promedio: {$notaTotal}"
+    if ($notaTotal <= 3.9 ){
+        echo "<br> Estudie Vago.";
+    } else{
+        echo "<br> El estudiante {$name} fue becado.";
+    }
+    /* echo "<br> El estudiante {$name} obtuvo como promedio: {$notaTotal}." */
 ?>
